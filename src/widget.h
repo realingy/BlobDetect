@@ -8,6 +8,22 @@
 #include <QObject>
 #include <QPushButton>
 #include <QLayout>
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/features2d/features2d.hpp"
+#include <QFileDialog>
+#include <QImage>
+#include <vector>
+#include <iostream>
+
+using namespace cv;
+using namespace std;
+
+#define CTG 4
+#define CTY 4
+#define CTR 4
+
+enum BlobLevel { GLevel, YLevel, RLevel };
 
 class Widget : public QWidget
 {
@@ -24,14 +40,30 @@ public slots:
 
 private:
 	void ImageProcess();
-//	void WindowResize(int width, int height);
+	void FlagBlob(int r0, int r1, int c0, int c1, BlobLevel level);
+	void resetCount() {
+		blobCountG_ = 0;
+		blobCountY_ = 0;
+		blobCountR_ = 0;
+	}
+	bool isChecked() {
+		if(blobCountR_ > CTR || blobCountY_ > CTY || blobCountG_ > CTG)
+			return true;
+		return false;
+	}
+
 
 private:
-	QLabel label1;
-	QLabel label2;
-	QPixmap pix1;
-	QPixmap pix2;
+	Mat src_;
+	Mat mask_;
+	int width_;
+	int height_;
 	QString path;
+	
+	int blobCountG_;
+	int blobCountY_;
+	int blobCountR_;
+	
 };
 
 #endif //__WIDGET_H__
