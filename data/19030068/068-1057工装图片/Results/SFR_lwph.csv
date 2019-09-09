@@ -1,0 +1,8 @@
+File ,Date/time ,PH,ROI Ch,H/V,R10-90,R10-90C,Over-,Over-,MTF50,MTF50P,MTF,Camera,Lens,FL,f-stop,Location,ISO,Misc.,Gamma,Sh. radius,Chr Aber,Secondary,,Secondary,,EdgeRough,Shutter,Edge,Dark,Light,Under-
+,,,,,/PH,/PH,shoot %,sharpng %,LW/PH,LW/PH,Nyq,,,(mm),,,speed,settings,,pxls,area pxls,Readout 1,,Readout 2,,Pxls,Speed,Angle,region,region,shoot %
+671091057_CAM_SFR_4mm.bmp,2019-04-27 16:34:33,  480,1 Y,perpendicular,  337,  337,  2.3,-14.9,  382,  382,0.353,, , ,,13% top ctr,, ,0.500, 2.00, 0.00,MTF @ 0.3 C/P,0.99924,MTF20,26.265,,,-12.156, 0.0065, 0.6568,  0.0
+671091057_CAM_SFR_8mm.bmp,2019-04-27 16:35:15,  480,1 Y,perpendicular,  192,  192,  1.8,-33.7,  213,  213,0.101,, , ,,12% top ctr,, ,0.500, 2.00, 0.00,MTF @ 0.3 C/P,0.99426,MTF20,14.6166,,,-11.449, 0.0077, 0.7372,  0.0
+671091057_CAM_SFR_N2mm.bmp,2019-04-27 16:36:14,  480,1 Y,perpendicular,  140,  140,  2.3,-22.5,  146,  146,0.014,, , ,,14% top ctr,, ,0.500, 4.00, 0.00,MTF @ 0.3 C/P,0.99211,MTF20,10.0902,,,-11.572, 0.0056, 0.5541,  0.0
+671091057_SYS_SFR_4mm.bmp,2019-04-27 16:36:44,  480,1 Y,perpendicular,  146,  146,  6.0,-24.5,  153,  153,0.092,, , ,,2.4% right of ctr,, ,0.500, 4.00, 0.00,MTF @ 0.3 C/P,0.99348,MTF20,11.0458,,, 10.831, 0.0144, 0.5300,  0.0
+671091057_SYS_SFR_8mm.bmp,2019-04-27 16:37:17,  480,1 Y,perpendicular,   90,   90,  4.9,-31.3,  102,  102,0.050,, , ,,4.9% left of ctr,, ,0.500, 5.00, 0.00,MTF @ 0.3 C/P,0.98215,MTF20,7.3467,,, 10.614, 0.0108, 0.5461,  0.0
+671091057_SYS_SFR_N2mm.bmp,2019-04-27 16:37:58,  480,1 Y,perpendicular,   75,   75,  3.6,-22.0,   78,   78,0.051,, , ,,12% right of ctr,, ,0.500, 7.00, 0.00,MTF @ 0.3 C/P,0.98003,MTF20,4.5969,,,  8.852, 0.0282, 0.5584,  0.0
