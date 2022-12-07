@@ -1,10 +1,7 @@
 cmake_minimum_required(VERSION 2.8.11 FATAL_ERROR)
 
-# project(helloworld)
-
 # Qt库查询
 set(Qt5_DIR $ENV{QT590}/lib/cmake/Qt5)
-message(${Qt5_DIR})
 set(ACTIVE_QT_DIR $ENV{QTDIRMSVC})
 
 # Qt查询路径
@@ -36,7 +33,7 @@ aux_source_directory(. DIR_SRCS)
 # 查找头文件
 file(GLOB HEADER ./*.h)
 
-set(EXE_NAME 16_BlackPotCheck)
+set(EXE_NAME DeepInspection)
 add_executable(${EXE_NAME} ${DIR_SRCS} ${HEADER})
 target_link_libraries(${EXE_NAME} Qt5::Widgets)
 target_link_libraries (${EXE_NAME} ${OpenCV_LIBS})

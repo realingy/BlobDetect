@@ -1,12 +1,8 @@
 cmake_minimum_required(VERSION 2.8.11 FATAL_ERROR)
 
-project(BlobCheck)
+project(BlobDetect)
 
 add_subdirectory(src)
-
-
-
-
 
 # Qt库查询
 # set(Qt5_DIR $ENV{QT590}/lib/cmake/Qt5)

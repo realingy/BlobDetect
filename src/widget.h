@@ -1,22 +1,24 @@
 #ifndef __WIDGET_H__
 #define __WIDGET_H__
 
-#include <QWidget>
 #include <QDialog>
-#include <QLabel>
-#include <QPixmap>
-#include <QObject>
-#include <QPushButton>
-#include <QLayout>
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
-#include "opencv2/features2d/features2d.hpp"
+#include <QDir>
 #include <QFileDialog>
 #include <QImage>
-#include <vector>
+#include <QLabel>
+#include <QLayout>
+#include <QObject>
+#include <QPixmap>
+#include <QPushButton>
+#include <QWidget>
 #include <iostream>
+#include <vector>
 
-using namespace cv;
+#include "opencv2/features2d/features2d.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "ui_widget.h"
+
 using namespace std;
 
 #define CTG 4
@@ -25,45 +27,45 @@ using namespace std;
 
 enum BlobLevel { GLevel, YLevel, RLevel };
 
-class Widget : public QWidget
-{
-	Q_OBJECT
-public:
-	explicit Widget(QWidget *parent = 0);
-	~Widget();
+class Widget : public QWidget {
+  Q_OBJECT
+ public:
+  explicit Widget(QWidget *parent = 0);
+  ~Widget();
 
-	void showSrc();
-	void showEffect();
+  void showSrc();
+  void showEffect();
 
-public slots:
-	void showDialog(); //ÏÔÊ¾ÎÄ¼þ¶Ô»°¿ò
+ public slots:
+  void showDialog();  //ï¿½ï¿½Ê¾ï¿½Ä¼ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
 
-private:
-	void ImageProcess();
-	void FlagBlob(int r0, int r1, int c0, int c1, BlobLevel level);
-	void resetCount() {
-		blobCountG_ = 0;
-		blobCountY_ = 0;
-		blobCountR_ = 0;
-	}
-	bool isChecked() {
-		if(blobCountR_ > CTR || blobCountY_ > CTY || blobCountG_ > CTG)
-			return true;
-		return false;
-	}
+ private:
+  void ImageProcess();
+  void FlagBlob(cv::Mat src, int r0, int r1, int c0, int c1, BlobLevel level);
+  void resetCount() {
+    blobCountG_ = 0;
+    blobCountY_ = 0;
+    blobCountR_ = 0;
+  }
+  bool isChecked() {
+    if (blobCountR_ > CTR || blobCountY_ > CTY || blobCountG_ > CTG)
+      return true;
+    return false;
+  }
 
+ private:
+  cv::Mat src_;
+  cv::Mat mask_;
+  int width_;
+  int height_;
+  QString path_;
 
-private:
-	Mat src_;
-	Mat mask_;
-	int width_;
-	int height_;
-	QString path;
-	
-	int blobCountG_;
-	int blobCountY_;
-	int blobCountR_;
-	
+  int blobCountG_;
+  int blobCountY_;
+  int blobCountR_;
+
+ private:
+  Ui::Widget *ui;
 };
 
-#endif //__WIDGET_H__
+#endif  //__WIDGET_H__
