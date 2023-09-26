@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/xingming/github/BlobDetect/build/src",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/xingming/github/BlobDetect/build/src -I/home/xingming/github/BlobDetect/src -I/home/xingming/github/BlobDetect/build/src/blobtest_autogen/include -I/thirdparty/opencv401/include -I/thirdparty/opencv401/include/opencv -I/thirdparty/opencv401/include/opencv2 -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtWidgets -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtGui -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtCore -isystem /opt/Qt5.13.2/5.13.2/gcc_64/./mkspecs/linux-g++ -isystem /usr/local/include/opencv4 -O3 -DNDEBUG -fPIC -o CMakeFiles/blobtest.dir/blobtest_autogen/mocs_compilation.cpp.o -c /home/xingming/github/BlobDetect/build/src/blobtest_autogen/mocs_compilation.cpp",
+  "file": "/home/xingming/github/BlobDetect/build/src/blobtest_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/home/xingming/github/BlobDetect/build/src",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/xingming/github/BlobDetect/build/src -I/home/xingming/github/BlobDetect/src -I/home/xingming/github/BlobDetect/build/src/blobtest_autogen/include -I/thirdparty/opencv401/include -I/thirdparty/opencv401/include/opencv -I/thirdparty/opencv401/include/opencv2 -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtWidgets -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtGui -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtCore -isystem /opt/Qt5.13.2/5.13.2/gcc_64/./mkspecs/linux-g++ -isystem /usr/local/include/opencv4 -O3 -DNDEBUG -fPIC -o CMakeFiles/blobtest.dir/main.cpp.o -c /home/xingming/github/BlobDetect/src/main.cpp",
+  "file": "/home/xingming/github/BlobDetect/src/main.cpp"
+},
+{
+  "directory": "/home/xingming/github/BlobDetect/build/src",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/xingming/github/BlobDetect/build/src -I/home/xingming/github/BlobDetect/src -I/home/xingming/github/BlobDetect/build/src/blobtest_autogen/include -I/thirdparty/opencv401/include -I/thirdparty/opencv401/include/opencv -I/thirdparty/opencv401/include/opencv2 -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtWidgets -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtGui -isystem /opt/Qt5.13.2/5.13.2/gcc_64/include/QtCore -isystem /opt/Qt5.13.2/5.13.2/gcc_64/./mkspecs/linux-g++ -isystem /usr/local/include/opencv4 -O3 -DNDEBUG -fPIC -o CMakeFiles/blobtest.dir/widget.cpp.o -c /home/xingming/github/BlobDetect/src/widget.cpp",
+  "file": "/home/xingming/github/BlobDetect/src/widget.cpp"
+}
+]
